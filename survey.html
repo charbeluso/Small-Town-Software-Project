@@ -1,0 +1,221 @@
+<!DOCTYPE HTML>
+<HTML lang="en">
+
+<HEAD>
+<TITLE>Small Town Center Starkville Survey</TITLE>
+</HEAD>
+
+<BODY>
+
+<H1><CENTER>Fred Carl Jr. Small Town Center </CENTER></H1>
+
+<H4><CENTER>Starkville, MS</CENTER></H4>
+
+<H4><CENTER>Bike/Walking/Community Survey<BR></CENTER></H4>
+
+<!--This is a comment. Comments are not displayed in the browser-->
+
+<!--
+EXAMPLE----- Need to send actual data results somewhere else
+<form method=post
+      action=http://www.udel.edu/cgi-bin/guestbook/dsacher/survey/survey.data>
+	  -->
+<form method="post" action="survey.html"> 
+
+
+<P>
+<P>
+<CENTER>The purpose of this survey is to find out what the people of Starkville 
+want and need. <br>This survey should take less than 20 minutes to complete.</CENTER>
+<P>
+<!--Some simple demographic information could be collected with radio
+buttons (e.g., gender, nationality), selection boxes (e.g., date
+of birth, highest degree attained):-->
+<HR>
+
+<FORM >
+<H3>Background Info: </H3>
+
+<P>
+Gender: <INPUT TYPE="RADIO" NAME="gender" VALUE="male" required> Male
+        <INPUT TYPE="RADIO" NAME="gender" VALUE="female">Female
+		<INPUT TYPE="RADIO" NAME="gender" VALUE="other">Other
+
+
+<P> 
+What is your age range? <SELECT NAME="range" required>
+<OPTION SELECTED VALUE=""> ? 
+<OPTION VALUE="1"> less than 20
+<OPTION VALUE="2"> 20 - 29
+<OPTION VALUE="3"> 30 - 39
+<OPTION VALUE="4"> 40 - 49
+<OPTION VALUE="5"> 50 - 59
+<OPTION VALUE="6"> 60 - 69
+<OPTION VALUE="7"> 70 - 79
+<OPTION VALUE="8"> 80 - 89
+<OPTION VALUE="9"> greater than 90
+</SELECT> 
+
+   
+<P>
+What is the highest degree you have obtained? <SELECT NAME="educ" required>
+<OPTION SELECTED VALUE=""> ?
+<OPTION VALUE="1">High School diploma
+<OPTION VALUE="2">Associate's degree
+<OPTION VALUE="3">Bachelor's degree
+<OPTION VALUE="4">Master's degree
+<OPTION VALUE="5">Doctoral degree
+<OPTION VALUE="6">None of the above</SELECT>     
+<HR>
+
+
+<P>
+Do you play any sports?<BR> 
+<i>Please check all that apply:</i>
+<BR><INPUT TYPE="CHECKBOX" NAME="sport" VALUE="1"> I do not play any sports
+<BR><INPUT TYPE="CHECKBOX" NAME="sport" VALUE="2"> Baseball/Softball
+<BR><INPUT TYPE="CHECKBOX" NAME="sport" VALUE="3"> Basketball
+<BR><INPUT TYPE="CHECKBOX" NAME="sport" VALUE="4"> Cross Country / Track
+<BR><INPUT TYPE="CHECKBOX" NAME="sport" VALUE="5"> Frisbee / Disc Golf
+<BR><INPUT TYPE="CHECKBOX" NAME="sport" VALUE="6"> Football
+<BR><INPUT TYPE="CHECKBOX" NAME="sport" VALUE="7"> Soccer
+<BR><INPUT TYPE="CHECKBOX" NAME="sport" VALUE="8"> Golf
+<BR><INPUT TYPE="CHECKBOX" NAME="sport" VALUE="9"> Tennis
+<BR><INPUT TYPE="CHECKBOX" NAME="sport" VALUE="10"> Yoga
+<BR><INPUT TYPE="CHECKBOX" NAME="sport" VALUE="11"> Swim
+<BR><INPUT TYPE="CHECKBOX" NAME="sport" VALUE="12"> Other
+
+
+<HR>
+<P><P>
+<H3>Biking and Walking Info: </H3>
+<P>
+Do you commute? <INPUT TYPE="RADIO" NAME="commute" VALUE="1" required>yes 
+				<INPUT TYPE="RADIO" NAME="commute" VALUE="2">no
+
+<P>
+
+<!-- function onclick() 
+{
+  yes();
+}
+-->
+How do you commute to work or school? <SELECT NAME="commute" required>
+<OPTION VALUE=""> ?
+<OPTION VALUE="1">Car
+<OPTION VALUE="2">Bike 
+<OPTION VALUE="3">Walk
+<OPTION VALUE="4">Some other way
+<OPTION VALUE="5">I do not commute.
+</SELECT>
+<p><p>
+
+
+Please draw your <B>current</B> biking route:<BR>
+<img src="starkvillemap.png" height="200" width="200" alt="stand-in map for now">
+<BR>
+Please draw your <B>desired</B> biking route:<BR>
+<img src="starkvillemap.png" height="200" width="200" alt="stand-in map for now">
+<BR>
+<p><p>
+
+Please draw your <B>current</B> walking route:<BR>
+<img src="starkvillemap.png" height="200" width="200" alt="stand-in map for now">
+<BR>
+Please draw your <B>desired</B> walking route:<BR>
+<img src="starkvillemap.png" height="200" width="200" alt="stand-in map for now">
+
+
+<HR>
+<P><P>
+<H3>The following questions ask how you feel
+about Starkville. Select the answer that is true most of the time.
+</H3>
+
+<P>
+<TABLE BORDER>
+<TR ALIGN=CENTER>
+<TD WIDTH=75> </TD>
+<TD WIDTH=75><B>Strongly<br>agree</B></TD>
+<TD WIDTH=75><B>Agree</B></TD>
+<TD WIDTH=75><B>Neither<br>agree<br>nor<br>disagree</B></TD>
+<TD WIDTH=75><B>Disagree</B></TD>
+<TD WIDTH=75><B>Strongly<br>disagree</B></TD>
+</TR>
+
+<TR ALIGN=CENTER>
+<TD  ALIGN=LEFT>
+  I am happy with the current bike routes.</TD>
+<TD><INPUT TYPE="RADIO" NAME="bike" VALUE="1"></TD>
+<TD><INPUT TYPE="RADIO" NAME="bike" VALUE="2"></TD>
+<TD><INPUT TYPE="RADIO" NAME="bike" VALUE="3"></TD>
+<TD><INPUT TYPE="RADIO" NAME="bike" VALUE="4"></TD>
+<TD><INPUT TYPE="RADIO" NAME="bike" VALUE="5"></TD>
+</TR>
+
+<TR ALIGN=CENTER>
+<TD  ALIGN=LEFT>
+  I am happy with the current walking routes.</TD>
+<TD><INPUT TYPE="RADIO" NAME="walk" VALUE="1"></TD>
+<TD><INPUT TYPE="RADIO" NAME="walk" VALUE="2"></TD>
+<TD><INPUT TYPE="RADIO" NAME="walk" VALUE="3"></TD>
+<TD><INPUT TYPE="RADIO" NAME="walk" VALUE="4"></TD>
+<TD><INPUT TYPE="RADIO" NAME="walk" VALUE="5"></TD>
+</TR>
+
+<TR ALIGN=CENTER>
+<TD  ALIGN=LEFT>
+   I am happy with the current parks.</TD>
+<TD><INPUT TYPE="RADIO" NAME="parks" VALUE="1"></TD>
+<TD><INPUT TYPE="RADIO" NAME="parks" VALUE="2"></TD>
+<TD><INPUT TYPE="RADIO" NAME="parks" VALUE="3"></TD>
+<TD><INPUT TYPE="RADIO" NAME="parks" VALUE="4"></TD>
+<TD><INPUT TYPE="RADIO" NAME="parks" VALUE="5"></TD>
+</TR>
+
+<TR ALIGN=CENTER>
+<TD  ALIGN=LEFT>
+  Starkville is very pet friendly.</TD>
+<TD><INPUT TYPE="RADIO" NAME="pet" VALUE="1"></TD>
+<TD><INPUT TYPE="RADIO" NAME="pet" VALUE="2"></TD>
+<TD><INPUT TYPE="RADIO" NAME="pet" VALUE="3"></TD>
+<TD><INPUT TYPE="RADIO" NAME="pet" VALUE="4"></TD>
+<TD><INPUT TYPE="RADIO" NAME="pet" VALUE="5"></TD>
+</TR>
+</TABLE>
+<P><P>
+
+
+
+<HR>
+<P><P>
+Do you have any additional comments?<BR>
+<TEXTAREA NAME="comment" ROWS="4" COLS="50">
+</TEXTAREA>
+
+
+<CENTER>
+<HR>
+<P><P>
+Thank you for taking the survey! <BR> 
+To submit your results, press the <B>SUBMIT</B> button below.
+<P><P>
+<input type=reset VALUE="start over" onclick="location.href = 'survey.html';">
+
+<input type=submit value="<< Go back" onclick="location.href = 'survey.html';"> 
+<input type=submit VALUE="SUBMIT">
+<!--<input type=submit value="Next >>" onclick="location.href = 'survey.html';">-->
+<HR>
+</CENTER>
+
+</FORM>
+
+
+
+
+
+
+
+
+</BODY>
+</HTML>
