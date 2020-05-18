@@ -1,0 +1,26 @@
+[
+    {
+        "question": "Do you play any sports? If so, please select which one(s): ",
+        "category": "checkbox",
+        "id": 1001,
+        "choices": "hi"
+    },
+    {
+        "question": "What is your gender?",
+        "category": "radio",
+        "id": 1002,
+        "choices": "hello"
+    },
+    {
+        "question": "Draw current bike route: ",
+        "category": "map",
+        "id": 1003,
+        "choices": "wassup"
+    },
+    {
+        "question": "Any extra comments?",
+        "category": "comment",
+        "id": 1004,
+        "choices": "hola"
+    }
+]

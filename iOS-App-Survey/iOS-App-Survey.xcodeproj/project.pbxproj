@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C497DF952473413300060AE7 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = C497DF922473413300060AE7 /* Data.swift */; };
+		C497DF962473413300060AE7 /* sampleDatabase.json in Resources */ = {isa = PBXBuildFile; fileRef = C497DF932473413300060AE7 /* sampleDatabase.json */; };
+		C497DF972473413300060AE7 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = C497DF942473413300060AE7 /* Question.swift */; };
 		C49F6736246DB195000DFEA1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49F6735246DB195000DFEA1 /* AppDelegate.swift */; };
 		C49F6738246DB195000DFEA1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49F6737246DB195000DFEA1 /* SceneDelegate.swift */; };
 		C49F673A246DB195000DFEA1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49F6739246DB195000DFEA1 /* ContentView.swift */; };
@@ -15,8 +18,17 @@
 		C49F6742246DB19D000DFEA1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C49F6740246DB19D000DFEA1 /* LaunchScreen.storyboard */; };
 		C49F674D246DB19D000DFEA1 /* iOS_App_SurveyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49F674C246DB19D000DFEA1 /* iOS_App_SurveyTests.swift */; };
 		C49F675A246DB363000DFEA1 /* LogoHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49F6757246DB363000DFEA1 /* LogoHeader.swift */; };
-		C49F675B246DB363000DFEA1 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49F6758246DB363000DFEA1 /* QuestionView.swift */; };
 		C49F675C246DB363000DFEA1 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49F6759246DB363000DFEA1 /* MapView.swift */; };
+		C49F675E246E03EF000DFEA1 /* CheckboxQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49F675D246E03EF000DFEA1 /* CheckboxQuestion.swift */; };
+		C49F6760246E0405000DFEA1 /* RadioButtonQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49F675F246E0405000DFEA1 /* RadioButtonQuestion.swift */; };
+		C49F6762246E0429000DFEA1 /* MapQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49F6761246E0429000DFEA1 /* MapQuestion.swift */; };
+		C49F6765246E045F000DFEA1 /* ExtraCommentsQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49F6764246E045F000DFEA1 /* ExtraCommentsQuestion.swift */; };
+		C49F6768246E0B16000DFEA1 /* ForwardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49F6767246E0B16000DFEA1 /* ForwardButton.swift */; };
+		C49F676A246E0B21000DFEA1 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49F6769246E0B21000DFEA1 /* BackButton.swift */; };
+		C49F676C246E18EE000DFEA1 /* StartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49F676B246E18EE000DFEA1 /* StartButton.swift */; };
+		C4E3F95D246F4032003DD254 /* PracticeDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E3F95C246F4032003DD254 /* PracticeDatabase.swift */; };
+		C4F7555A246ED66C00198636 /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F75559246ED66C00198636 /* MotherView.swift */; };
+		C4F7555C246ED97700198636 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F7555B246ED97700198636 /* ViewRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C497DF922473413300060AE7 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		C497DF932473413300060AE7 /* sampleDatabase.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sampleDatabase.json; sourceTree = "<group>"; };
+		C497DF942473413300060AE7 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		C49F6732246DB195000DFEA1 /* iOS-App-Survey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-App-Survey.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C49F6735246DB195000DFEA1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C49F6737246DB195000DFEA1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,8 +57,17 @@
 		C49F674C246DB19D000DFEA1 /* iOS_App_SurveyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_App_SurveyTests.swift; sourceTree = "<group>"; };
 		C49F674E246DB19D000DFEA1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C49F6757246DB363000DFEA1 /* LogoHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoHeader.swift; sourceTree = "<group>"; };
-		C49F6758246DB363000DFEA1 /* QuestionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		C49F6759246DB363000DFEA1 /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		C49F675D246E03EF000DFEA1 /* CheckboxQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxQuestion.swift; sourceTree = "<group>"; };
+		C49F675F246E0405000DFEA1 /* RadioButtonQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonQuestion.swift; sourceTree = "<group>"; };
+		C49F6761246E0429000DFEA1 /* MapQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapQuestion.swift; sourceTree = "<group>"; };
+		C49F6764246E045F000DFEA1 /* ExtraCommentsQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraCommentsQuestion.swift; sourceTree = "<group>"; };
+		C49F6767246E0B16000DFEA1 /* ForwardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForwardButton.swift; sourceTree = "<group>"; };
+		C49F6769246E0B21000DFEA1 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
+		C49F676B246E18EE000DFEA1 /* StartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButton.swift; sourceTree = "<group>"; };
+		C4E3F95C246F4032003DD254 /* PracticeDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeDatabase.swift; sourceTree = "<group>"; };
+		C4F75559246ED66C00198636 /* MotherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotherView.swift; sourceTree = "<group>"; };
+		C4F7555B246ED97700198636 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +88,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C497DF982473415700060AE7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C497DF922473413300060AE7 /* Data.swift */,
+				C497DF942473413300060AE7 /* Question.swift */,
+				C497DF932473413300060AE7 /* sampleDatabase.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		C49F6729246DB195000DFEA1 = {
 			isa = PBXGroup;
 			children = (
@@ -85,12 +119,17 @@
 		C49F6734246DB195000DFEA1 /* iOS-App-Survey */ = {
 			isa = PBXGroup;
 			children = (
-				C49F6735246DB195000DFEA1 /* AppDelegate.swift */,
+				C497DF982473415700060AE7 /* Resources */,
+				C49F6763246E0434000DFEA1 /* Questions */,
+				C49F6766246E0AEE000DFEA1 /* Navigation Buttons */,
 				C49F6737246DB195000DFEA1 /* SceneDelegate.swift */,
+				C4F7555B246ED97700198636 /* ViewRouter.swift */,
+				C4F75559246ED66C00198636 /* MotherView.swift */,
 				C49F6739246DB195000DFEA1 /* ContentView.swift */,
-				C49F6757246DB363000DFEA1 /* LogoHeader.swift */,
 				C49F6759246DB363000DFEA1 /* MapView.swift */,
-				C49F6758246DB363000DFEA1 /* QuestionView.swift */,
+				C49F6757246DB363000DFEA1 /* LogoHeader.swift */,
+				C49F6735246DB195000DFEA1 /* AppDelegate.swift */,
+				C4E3F95C246F4032003DD254 /* PracticeDatabase.swift */,
 				C49F673B246DB19D000DFEA1 /* Assets.xcassets */,
 				C49F6740246DB19D000DFEA1 /* LaunchScreen.storyboard */,
 				C49F6743246DB19D000DFEA1 /* Info.plist */,
@@ -114,6 +153,27 @@
 				C49F674E246DB19D000DFEA1 /* Info.plist */,
 			);
 			path = "iOS-App-SurveyTests";
+			sourceTree = "<group>";
+		};
+		C49F6763246E0434000DFEA1 /* Questions */ = {
+			isa = PBXGroup;
+			children = (
+				C49F675D246E03EF000DFEA1 /* CheckboxQuestion.swift */,
+				C49F675F246E0405000DFEA1 /* RadioButtonQuestion.swift */,
+				C49F6761246E0429000DFEA1 /* MapQuestion.swift */,
+				C49F6764246E045F000DFEA1 /* ExtraCommentsQuestion.swift */,
+			);
+			path = Questions;
+			sourceTree = "<group>";
+		};
+		C49F6766246E0AEE000DFEA1 /* Navigation Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				C49F6767246E0B16000DFEA1 /* ForwardButton.swift */,
+				C49F6769246E0B21000DFEA1 /* BackButton.swift */,
+				C49F676B246E18EE000DFEA1 /* StartButton.swift */,
+			);
+			path = "Navigation Buttons";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +259,7 @@
 			files = (
 				C49F6742246DB19D000DFEA1 /* LaunchScreen.storyboard in Resources */,
 				C49F673F246DB19D000DFEA1 /* Preview Assets.xcassets in Resources */,
+				C497DF962473413300060AE7 /* sampleDatabase.json in Resources */,
 				C49F673C246DB19D000DFEA1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,12 +278,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C49F675B246DB363000DFEA1 /* QuestionView.swift in Sources */,
+				C4F7555C246ED97700198636 /* ViewRouter.swift in Sources */,
 				C49F675C246DB363000DFEA1 /* MapView.swift in Sources */,
+				C4F7555A246ED66C00198636 /* MotherView.swift in Sources */,
+				C497DF972473413300060AE7 /* Question.swift in Sources */,
 				C49F6736246DB195000DFEA1 /* AppDelegate.swift in Sources */,
+				C49F676A246E0B21000DFEA1 /* BackButton.swift in Sources */,
 				C49F675A246DB363000DFEA1 /* LogoHeader.swift in Sources */,
+				C49F6768246E0B16000DFEA1 /* ForwardButton.swift in Sources */,
 				C49F6738246DB195000DFEA1 /* SceneDelegate.swift in Sources */,
+				C49F676C246E18EE000DFEA1 /* StartButton.swift in Sources */,
 				C49F673A246DB195000DFEA1 /* ContentView.swift in Sources */,
+				C4E3F95D246F4032003DD254 /* PracticeDatabase.swift in Sources */,
+				C49F6765246E045F000DFEA1 /* ExtraCommentsQuestion.swift in Sources */,
+				C49F6762246E0429000DFEA1 /* MapQuestion.swift in Sources */,
+				C49F675E246E03EF000DFEA1 /* CheckboxQuestion.swift in Sources */,
+				C49F6760246E0405000DFEA1 /* RadioButtonQuestion.swift in Sources */,
+				C497DF952473413300060AE7 /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

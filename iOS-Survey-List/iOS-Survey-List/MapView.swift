@@ -1,10 +1,13 @@
 //
 //  MapView.swift
-//  Small Town Center Software
+//  iOS-Survey-List
 //
-//  Created by Charmaine Beluso on 5/13/20.
+//  Created by Charmaine Beluso on 5/18/20.
 //  Copyright © 2020 Carl Small Town Center. All rights reserved.
 //
+// Starkville: latitude: 33.45049, longitude: -88.81961
+// This file creates the map.
+
 
 import SwiftUI
 import MapKit
