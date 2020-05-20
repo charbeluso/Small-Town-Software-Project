@@ -8,29 +8,49 @@
 
 import SwiftUI
 
-// Structure that holds the list of questions for the survey
 struct ContentView: View {
-
-    // This starts our view of the questions
+    
+    @ObservedObject var viewRouter: ViewRouter
+    
     var body: some View {
-        
-        // Vertical stack that lists the questions
-        VStack(alignment: .center) {
-            
-            // List out each array from the JSON file that holds the questions and its other properties
-            List(sampleDatabase) { question in
+        VStack {
+            Image("smalltowncenterlogo")
+            VStack {
+                Spacer()
+                    .padding(.top)
+                Text("Welcome to the Starkville Survey!")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                Text("We will be asking you a few questions regarding Starkville.")
+                    .font(.title)
+                    .padding(.top)
+                Spacer()
+                    .padding(.vertical)
+                    .frame(width: 0.0, height: 200.0)
+                Text("Let's get started!")
+                    .font(.title)
+                    .padding(.bottom, 200.0)
                 
-                // Call the QuestionRow method that shows the properties for each question and pass in the properties for each question
-                QuestionRow(adminQuestion: question)
+                // Start Button
+                Button(action: {self.viewRouter.currentPage = 2}) {
+                   Text("Start here!")
+                       .fontWeight(.semibold)
+                       .font(.title)
+                       .frame(minWidth: 0, maxWidth: .infinity)
+                       .padding()
+                       .foregroundColor(.white)
+                       .background(Color.green)
+                       .cornerRadius(40)
+               }
+                Spacer()
+                .padding(.bottom)
             }
-            .padding()
         }
     }
 }
 
-// Previews the list of questions
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(viewRouter: ViewRouter())
     }
 }

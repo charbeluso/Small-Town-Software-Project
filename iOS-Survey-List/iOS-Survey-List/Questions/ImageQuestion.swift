@@ -6,17 +6,30 @@
 //  Copyright © 2020 Carl Small Town Center. All rights reserved.
 //
 // This file creates a image type question using the data from the JSON file. This type of question shows an image and asks the user about the image.
-
+/*
 import SwiftUI
 
 struct ImageQuestion: View {
+    // Creates a variable with the type Question from Question.swift
+    var adminQuestion: Question
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack {
+            Text(adminQuestion.question)
+            
+            adminQuestion.image
+        }
     }
+    
 }
+        
+
 
 struct ImageQuestion_Previews: PreviewProvider {
     static var previews: some View {
-        ImageQuestion()
+        ImageQuestion(adminQuestion: sampleDatabase[3])
     }
 }
+
+*/

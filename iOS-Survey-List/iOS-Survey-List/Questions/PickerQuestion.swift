@@ -34,7 +34,8 @@ struct PickerQuestion: View {
             ForEach(0 ..< adminQuestion.choices.count) {
                 Text(self.adminQuestion.choices[$0]).font(.title).tag($0)
           }
-       }
+        }
+        .padding(.vertical, 50.0)
         //Text("You selected: \(adminQuestion.choices[selectedChoice])")
     }
 }

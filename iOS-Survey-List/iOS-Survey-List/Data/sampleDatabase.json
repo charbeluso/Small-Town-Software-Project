@@ -1,0 +1,153 @@
+[
+    {
+        "question": "What sports do you play?",
+        "category": "checkbox",
+        "choices": ["Baseball", "Soccer", "Football", "Tennis", "Swimming", "Track/XC", "Basketball", "Other"],
+        "id": 1
+    },
+    {
+        "question": "What is your gender?",
+        "category": "radio",
+        "choices": ["Male", "Female"],
+        "id": 2
+    },
+    {
+        "question": "Draw current bike route: ",
+        "category": "map",
+        "choices": [""],
+        "id": 3
+    },
+    {
+        "question": "Do you wear a facemask when going out in public?",
+        "category": "image",
+        "imageName": "facemask",
+        "choices": ["Yes", "No", "Sometimes"],
+        "id": 4
+    },
+    {
+        "question": "What businesses did you frequent most often before the pandemic? (mark on map)",
+        "category": "map",
+        "choices": [""],
+        "id": 5
+    },
+    {
+        "question": "What businesses do you frequent most often during the pandemic? (mark on map)",
+        "category": "map",
+        "choices": [""],
+        "id": 6
+    },
+    {
+        "question": "What activities did you most frequently participate in before the pandemic?",
+        "category": "comment",
+        "choices": [""],
+        "id": 7
+    },
+    {
+        "question": "What activities do you most frequently participate in during the pandemic?",
+        "category": "comment",
+        "choices": [""],
+        "id": 8
+    },
+    {
+        "question": "Have you ridden a bike during the pandemic?",
+        "category": "radio",
+        "choices": ["Yes", "No"],
+        "id": 9
+    },
+    {
+        "question": "If so, what bike routes do you frequent? (mark on map)",
+        "category": "map",
+        "choices": [""],
+        "id": 10
+    },
+    {
+        "question": "How often did you ride a bike before the pandemic?",
+        "category": "radio",
+        "choices": ["Everyday", "3-6 times a week", "1 or 2 times a week", "Never"],
+        "id": 11
+    },
+    {
+        "question": "How often do you ride a bike during the pandemic?",
+        "category": "radio",
+        "choices": ["Everyday", "3-6 times a week", "1 or 2 times a week", "Never"],
+        "id": 12
+    },
+    {
+        "question": "Have you gone on walks during the pandemic?",
+        "category": "radio",
+        "choices": ["Yes", "No"],
+        "id": 13
+    },
+    {
+        "question": "If so, what walking routes do you frequent? (mark on map)",
+        "category": "map",
+        "choices": [""],
+        "id": 14
+    },
+    {
+        "question": "How often did you take a walk before the pandemic?",
+        "category": "radio",
+        "choices": ["Everyday", "3-6 times a week", "1 or 2 times a week", "Never"],
+        "id": 15
+    },
+    {
+        "question": "How often do you take a walk during the pandemic?",
+        "category": "radio",
+        "choices": ["Everyday", "3-6 times a week", "1 or 2 times a week", "Never"],
+        "id": 16
+    },
+    {
+        "question": "When biking or walking, do you frequent any businesses?",
+        "category": "radio",
+        "choices": ["Yes", "No"],
+        "id": 17
+    },
+    {
+        "question": "If so, which ones? (mark on map)",
+        "category": "map",
+        "choices": [""],
+        "id": 18
+    },
+    {
+        "question": "What new activities are you participating in during the pandemic? (helping elderly, cooking more, working from home, cutting your own hair- ha!)",
+        "category": "comment",
+        "choices": [""],
+        "id": 19
+    },
+    {
+        "question": "How are you receiving goods and products during the pandemic? (select all that apply)",
+        "category": "checkbox",
+        "choices": ["Driving to the store", "Friend/family drops off the groceries at my door", "Online shopping & delivery", "Food delivery services", "Other"],
+        "id": 20
+    },
+    {
+        "question": "Do you shop locally during the pandemic?",
+        "category": "radio",
+        "choices": ["Yes", "No"],
+        "id": 21
+    },
+    {
+        "question": "If so, where do you shop locally? (mark on map)",
+        "category": "map",
+        "choices": [""],
+        "id": 22
+    },
+    {
+        "question": "Did you previously shop at these locations before the pandemic?",
+        "category": "radio",
+        "choices": ["Yes", "No"],
+        "id": 23
+    },
+    {
+        "question": "Where did you previously shop locally? (mark on map)",
+        "category": "map",
+        "choices": [""],
+        "id": 24
+    },
+    {
+        "question": "Any extra comments?",
+        "category": "comment",
+        "choices": [""],
+        "id": 25
+    }
+]

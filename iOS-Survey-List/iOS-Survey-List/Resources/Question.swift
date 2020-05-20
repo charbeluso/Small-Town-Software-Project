@@ -14,4 +14,13 @@ struct Question: Hashable, Codable, Identifiable {
     var question: String
     var category: String
     var choices = [String]()
+    //fileprivate var imageName: String
 }
+
+/*
+extension Question {
+    var image: Image {
+        ImageStore.shared.image(name: imageName)
+    }
+}
+*/

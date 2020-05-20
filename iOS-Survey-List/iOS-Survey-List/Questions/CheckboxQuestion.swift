@@ -105,7 +105,7 @@ struct CheckboxQuestion: View {
                         callback: self.checkboxSelected
                     )
                 }
-            }
+           }
                 
             // Shows the entire list
             .frame(height: CGFloat(adminQuestion.choices.count * 50))

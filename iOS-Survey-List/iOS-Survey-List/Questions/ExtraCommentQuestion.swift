@@ -39,6 +39,7 @@ struct ExtraCommentQuestion: View {
             }) {
                 print("Comment onCommit")
             }
+            .padding(.bottom, 50.0)
             .frame(width: 700.0)
             .textFieldStyle(RoundedBorderTextFieldStyle())
             
@@ -52,6 +53,6 @@ struct ExtraCommentQuestion: View {
 // Previews the extra comment question from the fourth element in sampleDatabase
 struct ExtraCommentQuestion_Previews: PreviewProvider {
     static var previews: some View {
-        ExtraCommentQuestion(adminQuestion: sampleDatabase[3])
+        ExtraCommentQuestion(adminQuestion: sampleDatabase[18])
     }
 }
