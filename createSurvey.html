@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Admin Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link href="main.css" rel="stylesheet"/>
+  <script src="javascript/index.js"></script>
+  <script src="javascript/main.js"></script></head>
+<body>
+
+<div class="text-center">
+    <img src="Pictures/HORIZONTAL_WEB_black.jpg" class="img-fluid" alt="Responsive image" style="width: 50%;">
+    <h2>Admin Page</h2> 
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="test.html">Home </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Create Survey<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="editSurvey.html">Edit Survey</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="viewResults.html">View Results</a>
+        </li>
+      </ul>
+    </div>
+</nav>
+
+
+
+<div class="container" style="margin-top: 5%">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="panel panel-default">
+        <div class="panel-heading">Create New Survey:</div>
+        <div class="panel-group">
+          <form action="createSurvey.html" method="POST" id="survey-form">
+            <label>Survey Title: </label>
+            <input name="survey_title" id="survey_title" type="text" class="input-group" />
+            <label>Survey Questions:</label>
+            <div id="questions">
+            </div>
+            <br>
+            
+            <button class="btn btn-primary" type="button" style="display: block; margin-top: 5px;" id="addq"><span class="glyphicon glyphicon-plus"></span>Add a question</button>
+            <button onClick="uploadSurvey()" class="btn btn-success" type="submit" id="uploadsurvey" name="uploadsurvey" style="display: block; margin-top: 10px">Upload Survey</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+</div>
+
+<script>
+
+//Submits the newly created survey
+function uploadSurvey(){
+    document.getElementById("survey-form").submit();
+}
+
+//Form validation
+function validateForm(){
+  return;
+}
+
+
+</script>
+
+</body></html>

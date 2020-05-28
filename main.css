@@ -1,0 +1,32 @@
+label {
+margin: 10px 0;
+}
+.question-container .question-label {
+border: none;
+
+}
+.answer-option {
+width: 200px;
+}
+input[type=radio], input[type=checkbox] {
+width: 50px;
+float: left;
+}
+
+.radio-answer-options {
+background-color: lightgrey;
+}
+.checkbox-answer-options {
+background-color: lightgrey;
+}
+.text-answer-options {
+background-color: lightgrey;
+}
+
+.question-container{
+    padding: 20px;
+}
+
+#survey_title{
+    padding: 5px;
+}
