@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16B509912C9190290076390A /* Pods_CSTC_iOS_SurveyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBCA7D91B54C2E1F409082F9 /* Pods_CSTC_iOS_SurveyTests.framework */; };
 		C45EECB724814FB900830DF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45EECB624814FB900830DF3 /* AppDelegate.swift */; };
 		C45EECB924814FB900830DF3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45EECB824814FB900830DF3 /* SceneDelegate.swift */; };
 		C45EECBB24814FB900830DF3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45EECBA24814FB900830DF3 /* ContentView.swift */; };
@@ -14,6 +15,22 @@
 		C45EECC024814FBB00830DF3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C45EECBF24814FBB00830DF3 /* Preview Assets.xcassets */; };
 		C45EECC324814FBB00830DF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C45EECC124814FBB00830DF3 /* LaunchScreen.storyboard */; };
 		C45EECCE24814FBB00830DF3 /* CSTC_iOS_SurveyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45EECCD24814FBB00830DF3 /* CSTC_iOS_SurveyTests.swift */; };
+		C4A0871424815AA40087D79C /* ExtraCommentQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A0871324815AA40087D79C /* ExtraCommentQuestion.swift */; };
+		C4A0871624815AAD0087D79C /* ImageQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A0871524815AAD0087D79C /* ImageQuestion.swift */; };
+		C4A0871824815AB50087D79C /* MapQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A0871724815AB50087D79C /* MapQuestion.swift */; };
+		C4A0871A24815AC50087D79C /* MultipleChoiceQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A0871924815AC50087D79C /* MultipleChoiceQuestion.swift */; };
+		C4A0871C24815AE80087D79C /* SingleChoiceQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A0871B24815AE80087D79C /* SingleChoiceQuestion.swift */; };
+		C4A0871E24815BC20087D79C /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A0871D24815BC20087D79C /* Data.swift */; };
+		C4A0872024815BDD0087D79C /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A0871F24815BDD0087D79C /* Question.swift */; };
+		C4A0872224815C2A0087D79C /* EndPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A0872124815C290087D79C /* EndPage.swift */; };
+		C4A0872424815C360087D79C /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A0872324815C360087D79C /* MapView.swift */; };
+		C4A0872624815C3F0087D79C /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A0872524815C3F0087D79C /* MotherView.swift */; };
+		C4A0872824815C4B0087D79C /* QuestionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A0872724815C4B0087D79C /* QuestionRow.swift */; };
+		C4A0872A24815C550087D79C /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A0872924815C540087D79C /* QuestionView.swift */; };
+		C4A0872C24815C5E0087D79C /* StartPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A0872B24815C5E0087D79C /* StartPage.swift */; };
+		C4A0872E24815C690087D79C /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A0872D24815C690087D79C /* ViewRouter.swift */; };
+		C4A08730248165A00087D79C /* sampleDatabase.json in Resources */ = {isa = PBXBuildFile; fileRef = C4A0872F2481659F0087D79C /* sampleDatabase.json */; };
+		C52BE392C6AC108ACA42774C /* Pods_CSTC_iOS_Survey.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF0E35BA034BD19DA81A46E /* Pods_CSTC_iOS_Survey.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +44,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		20FDC8AB1ED3973AB800D16E /* Pods-CSTC-iOS-Survey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSTC-iOS-Survey.release.xcconfig"; path = "Target Support Files/Pods-CSTC-iOS-Survey/Pods-CSTC-iOS-Survey.release.xcconfig"; sourceTree = "<group>"; };
+		42CCA3D2DCB5B67C721511B9 /* Pods-CSTC-iOS-Survey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSTC-iOS-Survey.debug.xcconfig"; path = "Target Support Files/Pods-CSTC-iOS-Survey/Pods-CSTC-iOS-Survey.debug.xcconfig"; sourceTree = "<group>"; };
+		9D5851549A34B7209CC3E4A6 /* Pods-CSTC-iOS-SurveyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSTC-iOS-SurveyTests.debug.xcconfig"; path = "Target Support Files/Pods-CSTC-iOS-SurveyTests/Pods-CSTC-iOS-SurveyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A56D1E8474A93F1F014422BC /* Pods-CSTC-iOS-SurveyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSTC-iOS-SurveyTests.release.xcconfig"; path = "Target Support Files/Pods-CSTC-iOS-SurveyTests/Pods-CSTC-iOS-SurveyTests.release.xcconfig"; sourceTree = "<group>"; };
+		BAF0E35BA034BD19DA81A46E /* Pods_CSTC_iOS_Survey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CSTC_iOS_Survey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C45EECB324814FB900830DF3 /* CSTC-iOS-Survey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CSTC-iOS-Survey.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C45EECB624814FB900830DF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C45EECB824814FB900830DF3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +60,22 @@
 		C45EECC924814FBB00830DF3 /* CSTC-iOS-SurveyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CSTC-iOS-SurveyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C45EECCD24814FBB00830DF3 /* CSTC_iOS_SurveyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSTC_iOS_SurveyTests.swift; sourceTree = "<group>"; };
 		C45EECCF24814FBB00830DF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4A0871324815AA40087D79C /* ExtraCommentQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraCommentQuestion.swift; sourceTree = "<group>"; };
+		C4A0871524815AAD0087D79C /* ImageQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageQuestion.swift; sourceTree = "<group>"; };
+		C4A0871724815AB50087D79C /* MapQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapQuestion.swift; sourceTree = "<group>"; };
+		C4A0871924815AC50087D79C /* MultipleChoiceQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleChoiceQuestion.swift; sourceTree = "<group>"; };
+		C4A0871B24815AE80087D79C /* SingleChoiceQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleChoiceQuestion.swift; sourceTree = "<group>"; };
+		C4A0871D24815BC20087D79C /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		C4A0871F24815BDD0087D79C /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		C4A0872124815C290087D79C /* EndPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPage.swift; sourceTree = "<group>"; };
+		C4A0872324815C360087D79C /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		C4A0872524815C3F0087D79C /* MotherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotherView.swift; sourceTree = "<group>"; };
+		C4A0872724815C4B0087D79C /* QuestionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionRow.swift; sourceTree = "<group>"; };
+		C4A0872924815C540087D79C /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		C4A0872B24815C5E0087D79C /* StartPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPage.swift; sourceTree = "<group>"; };
+		C4A0872D24815C690087D79C /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
+		C4A0872F2481659F0087D79C /* sampleDatabase.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sampleDatabase.json; sourceTree = "<group>"; };
+		DBCA7D91B54C2E1F409082F9 /* Pods_CSTC_iOS_SurveyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CSTC_iOS_SurveyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C52BE392C6AC108ACA42774C /* Pods_CSTC_iOS_Survey.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +91,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16B509912C9190290076390A /* Pods_CSTC_iOS_SurveyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2100DA66F527BCA0003CDFC4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				42CCA3D2DCB5B67C721511B9 /* Pods-CSTC-iOS-Survey.debug.xcconfig */,
+				20FDC8AB1ED3973AB800D16E /* Pods-CSTC-iOS-Survey.release.xcconfig */,
+				9D5851549A34B7209CC3E4A6 /* Pods-CSTC-iOS-SurveyTests.debug.xcconfig */,
+				A56D1E8474A93F1F014422BC /* Pods-CSTC-iOS-SurveyTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		663E6F6F8457DCF95EFC22DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAF0E35BA034BD19DA81A46E /* Pods_CSTC_iOS_Survey.framework */,
+				DBCA7D91B54C2E1F409082F9 /* Pods_CSTC_iOS_SurveyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C45EECAA24814FB900830DF3 = {
 			isa = PBXGroup;
 			children = (
 				C45EECB524814FB900830DF3 /* CSTC-iOS-Survey */,
 				C45EECCC24814FBB00830DF3 /* CSTC-iOS-SurveyTests */,
 				C45EECB424814FB900830DF3 /* Products */,
+				2100DA66F527BCA0003CDFC4 /* Pods */,
+				663E6F6F8457DCF95EFC22DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,7 +141,17 @@
 		C45EECB524814FB900830DF3 /* CSTC-iOS-Survey */ = {
 			isa = PBXGroup;
 			children = (
+				C4A0871224815A880087D79C /* Resources */,
+				C4A0871124815A800087D79C /* Data */,
+				C4A0870F24815A660087D79C /* Questions */,
 				C45EECB624814FB900830DF3 /* AppDelegate.swift */,
+				C4A0872124815C290087D79C /* EndPage.swift */,
+				C4A0872324815C360087D79C /* MapView.swift */,
+				C4A0872524815C3F0087D79C /* MotherView.swift */,
+				C4A0872724815C4B0087D79C /* QuestionRow.swift */,
+				C4A0872924815C540087D79C /* QuestionView.swift */,
+				C4A0872B24815C5E0087D79C /* StartPage.swift */,
+				C4A0872D24815C690087D79C /* ViewRouter.swift */,
 				C45EECB824814FB900830DF3 /* SceneDelegate.swift */,
 				C45EECBA24814FB900830DF3 /* ContentView.swift */,
 				C45EECBC24814FBB00830DF3 /* Assets.xcassets */,
@@ -107,6 +179,35 @@
 			path = "CSTC-iOS-SurveyTests";
 			sourceTree = "<group>";
 		};
+		C4A0870F24815A660087D79C /* Questions */ = {
+			isa = PBXGroup;
+			children = (
+				C4A0871324815AA40087D79C /* ExtraCommentQuestion.swift */,
+				C4A0871524815AAD0087D79C /* ImageQuestion.swift */,
+				C4A0871724815AB50087D79C /* MapQuestion.swift */,
+				C4A0871924815AC50087D79C /* MultipleChoiceQuestion.swift */,
+				C4A0871B24815AE80087D79C /* SingleChoiceQuestion.swift */,
+			);
+			path = Questions;
+			sourceTree = "<group>";
+		};
+		C4A0871124815A800087D79C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C4A0872F2481659F0087D79C /* sampleDatabase.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		C4A0871224815A880087D79C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C4A0871D24815BC20087D79C /* Data.swift */,
+				C4A0871F24815BDD0087D79C /* Question.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -114,9 +215,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C45EECD224814FBB00830DF3 /* Build configuration list for PBXNativeTarget "CSTC-iOS-Survey" */;
 			buildPhases = (
+				6AFCDBF1E8F8CCEE9367E06C /* [CP] Check Pods Manifest.lock */,
 				C45EECAF24814FB900830DF3 /* Sources */,
 				C45EECB024814FB900830DF3 /* Frameworks */,
 				C45EECB124814FB900830DF3 /* Resources */,
+				1F6D3C9502C7EC657C473596 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +234,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C45EECD524814FBB00830DF3 /* Build configuration list for PBXNativeTarget "CSTC-iOS-SurveyTests" */;
 			buildPhases = (
+				1D96352E12E251A4A39A1D27 /* [CP] Check Pods Manifest.lock */,
 				C45EECC524814FBB00830DF3 /* Sources */,
 				C45EECC624814FBB00830DF3 /* Frameworks */,
 				C45EECC724814FBB00830DF3 /* Resources */,
@@ -190,6 +294,7 @@
 			files = (
 				C45EECC324814FBB00830DF3 /* LaunchScreen.storyboard in Resources */,
 				C45EECC024814FBB00830DF3 /* Preview Assets.xcassets in Resources */,
+				C4A08730248165A00087D79C /* sampleDatabase.json in Resources */,
 				C45EECBD24814FBB00830DF3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -203,14 +308,92 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1D96352E12E251A4A39A1D27 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CSTC-iOS-SurveyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1F6D3C9502C7EC657C473596 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CSTC-iOS-Survey/Pods-CSTC-iOS-Survey-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CSTC-iOS-Survey/Pods-CSTC-iOS-Survey-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CSTC-iOS-Survey/Pods-CSTC-iOS-Survey-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6AFCDBF1E8F8CCEE9367E06C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CSTC-iOS-Survey-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C45EECAF24814FB900830DF3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4A0871A24815AC50087D79C /* MultipleChoiceQuestion.swift in Sources */,
+				C4A0872424815C360087D79C /* MapView.swift in Sources */,
+				C4A0871824815AB50087D79C /* MapQuestion.swift in Sources */,
+				C4A0871C24815AE80087D79C /* SingleChoiceQuestion.swift in Sources */,
+				C4A0872624815C3F0087D79C /* MotherView.swift in Sources */,
+				C4A0872C24815C5E0087D79C /* StartPage.swift in Sources */,
+				C4A0871424815AA40087D79C /* ExtraCommentQuestion.swift in Sources */,
 				C45EECB724814FB900830DF3 /* AppDelegate.swift in Sources */,
+				C4A0872024815BDD0087D79C /* Question.swift in Sources */,
+				C4A0872224815C2A0087D79C /* EndPage.swift in Sources */,
 				C45EECB924814FB900830DF3 /* SceneDelegate.swift in Sources */,
+				C4A0872A24815C550087D79C /* QuestionView.swift in Sources */,
 				C45EECBB24814FB900830DF3 /* ContentView.swift in Sources */,
+				C4A0872E24815C690087D79C /* ViewRouter.swift in Sources */,
+				C4A0871E24815BC20087D79C /* Data.swift in Sources */,
+				C4A0872824815C4B0087D79C /* QuestionRow.swift in Sources */,
+				C4A0871624815AAD0087D79C /* ImageQuestion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +543,7 @@
 		};
 		C45EECD324814FBB00830DF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42CCA3D2DCB5B67C721511B9 /* Pods-CSTC-iOS-Survey.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -380,6 +564,7 @@
 		};
 		C45EECD424814FBB00830DF3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20FDC8AB1ED3973AB800D16E /* Pods-CSTC-iOS-Survey.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -400,6 +585,7 @@
 		};
 		C45EECD624814FBB00830DF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D5851549A34B7209CC3E4A6 /* Pods-CSTC-iOS-SurveyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -422,6 +608,7 @@
 		};
 		C45EECD724814FBB00830DF3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A56D1E8474A93F1F014422BC /* Pods-CSTC-iOS-SurveyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
