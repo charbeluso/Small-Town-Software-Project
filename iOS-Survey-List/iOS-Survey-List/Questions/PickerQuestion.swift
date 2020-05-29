@@ -19,30 +19,50 @@ struct PickerQuestion: View {
     // Gives a number to the choice
     @State private var selectedChoice = 0
     
+    // Dictionary with the question as the key & the selected choice as the value
+    @State var selectionsDictionary = [String:String]()
+    
     // This starts our view of the full picker question
     var body: some View {
 
         // Create a picker form
         // Gets the question from the JSON file labeled "question" from sampleDatabase.json
-        Picker(selection: $selectedChoice, label: Text(adminQuestion.question)
+        return VStack {
+            
+            // Question as the title
+            Text(adminQuestion.question)
                 .font(.largeTitle)
+                .font(Font.headline)
                 .fontWeight(.bold)
                 .multilineTextAlignment(.center)
-                .padding(.leading, 30.0)) {
-                    
-            // Lists the answers using the "choices" array data from the JSON file
-            ForEach(0 ..< adminQuestion.choices.count) {
-                Text(self.adminQuestion.choices[$0]).font(.title).tag($0)
-          }
+                .padding(.top, 50.0)
+           
+            // Uses the picker form to present the choices and makes the user pick only 1 choice (similar to radio button)
+            Picker(selection: $selectedChoice, label: Text(adminQuestion.question)
+                .fontWeight(.bold)
+                .multilineTextAlignment(.center)
+                .fixedSize()
+                .padding(.leading, 20.0)) {
+        
+                    // Lists the answers using the "choices" array data from the JSON file
+                    ForEach(0 ..< adminQuestion.choices.count, id: \.self) {
+                        Text(self.adminQuestion.choices[$0]).font(.title).tag($0)
+                    }
+            }.pickerStyle(SegmentedPickerStyle()) // Style of picker
+             .padding(.vertical, 30.0)
+            
+            // Shows the user what they picked
+            Text("You selected: \(adminQuestion.choices[selectedChoice])")
+                .padding(.bottom, 20.0)
+                //self.selectionsDictionary[self.adminQuestion.question] = self.adminQuestion.choices[selectedChoice]
+                //print(self.selectionsDictionary)
         }
-        .padding(.vertical, 50.0)
-        //Text("You selected: \(adminQuestion.choices[selectedChoice])")
     }
 }
 
 // Previews the picker question from the second element in sampleDatabase
 struct PickerQuestion_Previews: PreviewProvider {
     static var previews: some View {
-        PickerQuestion(adminQuestion: sampleDatabase[1])
+        PickerQuestion(adminQuestion: sampleDatabase[10])
     }
 }

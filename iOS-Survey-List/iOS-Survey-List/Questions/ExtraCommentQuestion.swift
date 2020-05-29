@@ -19,6 +19,9 @@ struct ExtraCommentQuestion: View {
     // Creates a comment variable with an empty string
     @State var comment: String = ""
     
+    // Dictionary with the question as the key & comment as the value
+    @State var selectionsDictionary = [String:String]()
+    
     // This starts our view of the full extra comment question
     var body: some View {
         
@@ -38,10 +41,15 @@ struct ExtraCommentQuestion: View {
                 print("Comment onEditingChanged - \(changed)")
             }) {
                 print("Comment onCommit")
-            }
-            .padding(.bottom, 50.0)
-            .frame(width: 700.0)
-            .textFieldStyle(RoundedBorderTextFieldStyle())
+                
+                // Once the user clicks "return" on the keypad, their comment stays in the box & adds the comment to selectionsDictionary
+                self.selectionsDictionary[self.adminQuestion.question] = self.comment
+                
+                // Shows the dictionary in the debugger
+                print(self.selectionsDictionary)
+            }.padding(.bottom, 50.0)
+             .frame(width: 700.0)
+             .textFieldStyle(RoundedBorderTextFieldStyle())
             
             //Text("Your comment: \(comment)")
             Spacer()

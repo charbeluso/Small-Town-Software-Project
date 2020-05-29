@@ -9,12 +9,17 @@
 
 
 import SwiftUI
+import Mapbox
 
 // Structure for a map type question
 struct MapQuestion: View {
     
     // Creates a variable with the type Question from Question.swift
     var adminQuestion: Question
+    
+    @State var annotations: [MGLPointAnnotation] = [
+        MGLPointAnnotation(title: "Mapbox", coordinate: .init(latitude: 37.791434, longitude: -122.396267))
+    ]
 
     // This starts our view of the full map question
     var body: some View {
@@ -30,12 +35,12 @@ struct MapQuestion: View {
                 .padding(.top, 40.0)
             
             // Calls the MapView function that shows the map from MapView.swift
-            MapView()
-                .frame(width: 600, height: 850) // formats the map to only show within this frame on the screen
+            // Starkville
+            MapView(annotations: $annotations).centerCoordinate(.init(latitude: 33.45049, longitude: -88.81961)).styleURL(MGLStyle.outdoorsStyleURL).zoomLevel(14).frame(width: 600, height: 850) // formats the map to only show within this frame on the screen
             
             Spacer()
             
-        } .padding()
+        }.padding()
     }
 }
 

@@ -5,38 +5,42 @@
 //  Created by Charmaine Beluso on 5/18/20.
 //  Copyright © 2020 Carl Small Town Center. All rights reserved.
 //
+// This file creates the start page for the survey.
+// Previously called "ContentView.swift"
+
 
 import SwiftUI
 
-struct ContentView: View {
+struct StartPage: View {
     
+    // Keeps track of page number
     @ObservedObject var viewRouter: ViewRouter
     
     var body: some View {
+        
+        // Vertical Stack that holds all of the text in the start page
         VStack {
+            
+            // CSTC Logo
             Image("smalltowncenterlogo")
+            
+            // Welcomes the user to the survey (could include extra info here e.g. instructions)
             VStack {
                 Spacer()
                     .padding(.top)
                 Text("Welcome to the Starkville Survey!")
                     .font(.largeTitle)
                     .fontWeight(.bold)
-                Text("We will be asking you a few questions regarding Starkville.")
-                    .font(.title)
-                    .padding(.top)
                 Spacer()
                     .padding(.vertical)
-                    .frame(width: 0.0, height: 200.0)
-                Text("Let's get started!")
-                    .font(.title)
-                    .padding(.bottom, 200.0)
-                
+                    .frame(width: 0.0, height: 100.0)
+ 
                 // Start Button
                 Button(action: {self.viewRouter.currentPage = 2}) {
-                   Text("Start here!")
+                   Text("START")
                        .fontWeight(.semibold)
                        .font(.title)
-                       .frame(minWidth: 0, maxWidth: .infinity)
+                       .frame(minWidth: 0, maxWidth: 700)
                        .padding()
                        .foregroundColor(.white)
                        .background(Color.green)
@@ -49,8 +53,9 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+// Previews the start page
+struct StartPage_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(viewRouter: ViewRouter())
+        StartPage(viewRouter: ViewRouter())
     }
 }

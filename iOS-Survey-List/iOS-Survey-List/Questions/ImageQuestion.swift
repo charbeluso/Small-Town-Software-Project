@@ -6,6 +6,7 @@
 //  Copyright © 2020 Carl Small Town Center. All rights reserved.
 //
 // This file creates a image type question using the data from the JSON file. This type of question shows an image and asks the user about the image.
+
 /*
 import SwiftUI
 

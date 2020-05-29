@@ -3,18 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A82CF482F4D45CF6338C2EA7 /* Pods_iOS_Survey_List.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC27FB3720B92D38A0226E4F /* Pods_iOS_Survey_List.framework */; };
+		C40DB8582476CFEC00E980F4 /* MultipleChoiceQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40DB8572476CFEC00E980F4 /* MultipleChoiceQuestion.swift */; };
 		C442CED22472D8C20036EAF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C442CED12472D8C20036EAF9 /* AppDelegate.swift */; };
 		C442CED42472D8C20036EAF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C442CED32472D8C20036EAF9 /* SceneDelegate.swift */; };
-		C442CED62472D8C20036EAF9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C442CED52472D8C20036EAF9 /* ContentView.swift */; };
+		C442CED62472D8C20036EAF9 /* StartPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C442CED52472D8C20036EAF9 /* StartPage.swift */; };
 		C442CED82472D8C30036EAF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C442CED72472D8C30036EAF9 /* Assets.xcassets */; };
 		C442CEDB2472D8C30036EAF9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C442CEDA2472D8C30036EAF9 /* Preview Assets.xcassets */; };
 		C442CEDE2472D8C30036EAF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C442CEDC2472D8C30036EAF9 /* LaunchScreen.storyboard */; };
 		C442CEE92472D8C30036EAF9 /* iOS_Survey_ListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C442CEE82472D8C30036EAF9 /* iOS_Survey_ListTests.swift */; };
-		C442CEF52472D9AD0036EAF9 /* CheckboxQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C442CEF42472D9AD0036EAF9 /* CheckboxQuestion.swift */; };
 		C442CEF92472D9C80036EAF9 /* MapQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C442CEF82472D9C80036EAF9 /* MapQuestion.swift */; };
 		C442CEFB2472D9DD0036EAF9 /* ExtraCommentQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C442CEFA2472D9DD0036EAF9 /* ExtraCommentQuestion.swift */; };
 		C442CEFD2472D9EA0036EAF9 /* ImageQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C442CEFC2472D9EA0036EAF9 /* ImageQuestion.swift */; };
@@ -23,13 +24,12 @@
 		C442CF052472DBAE0036EAF9 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = C442CF042472DBAE0036EAF9 /* Question.swift */; };
 		C442CF072472E5620036EAF9 /* QuestionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C442CF062472E5620036EAF9 /* QuestionRow.swift */; };
 		C442CF092472FD0C0036EAF9 /* PickerQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C442CF082472FD0C0036EAF9 /* PickerQuestion.swift */; };
-		C442CF0B2472FFD70036EAF9 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C442CF0A2472FFD70036EAF9 /* MapView.swift */; };
+		C478C12D24813A9700F8CC59 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C478C12C24813A9700F8CC59 /* MapView.swift */; };
 		C4B0A77424745B860074DC73 /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B0A77324745B860074DC73 /* MotherView.swift */; };
 		C4B0A77624745B900074DC73 /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B0A77524745B900074DC73 /* ViewRouter.swift */; };
 		C4B0A77824745C000074DC73 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B0A77724745C000074DC73 /* QuestionView.swift */; };
 		C4B0A77A24745C240074DC73 /* EndPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B0A77924745C240074DC73 /* EndPage.swift */; };
-		C4B0A77F247478550074DC73 /* facemask.png in Resources */ = {isa = PBXBuildFile; fileRef = C4B0A77E247478550074DC73 /* facemask.png */; };
-		C4B0A781247483B10074DC73 /* sunflower.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C4B0A780247483B10074DC73 /* sunflower.jpg */; };
+		D741B0679ED6BA225A61D48E /* Pods_iOS_Survey_ListTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64BC5FF98A75FF141B644026 /* Pods_iOS_Survey_ListTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,10 +56,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		13A558CAF8FAE4256F7F9EC1 /* Pods-iOS-Survey-List.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Survey-List.debug.xcconfig"; path = "Target Support Files/Pods-iOS-Survey-List/Pods-iOS-Survey-List.debug.xcconfig"; sourceTree = "<group>"; };
+		64BC5FF98A75FF141B644026 /* Pods_iOS_Survey_ListTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Survey_ListTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92BE187F503173DD019117F7 /* Pods-iOS-Survey-List.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Survey-List.release.xcconfig"; path = "Target Support Files/Pods-iOS-Survey-List/Pods-iOS-Survey-List.release.xcconfig"; sourceTree = "<group>"; };
+		C2DAE98DA4C6F485725AF480 /* Pods-iOS-Survey-ListTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Survey-ListTests.release.xcconfig"; path = "Target Support Files/Pods-iOS-Survey-ListTests/Pods-iOS-Survey-ListTests.release.xcconfig"; sourceTree = "<group>"; };
+		C40DB8572476CFEC00E980F4 /* MultipleChoiceQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleChoiceQuestion.swift; sourceTree = "<group>"; };
 		C442CECE2472D8C20036EAF9 /* iOS-Survey-List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Survey-List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C442CED12472D8C20036EAF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C442CED32472D8C20036EAF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C442CED52472D8C20036EAF9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C442CED52472D8C20036EAF9 /* StartPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPage.swift; sourceTree = "<group>"; };
 		C442CED72472D8C30036EAF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C442CEDA2472D8C30036EAF9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C442CEDD2472D8C30036EAF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -67,7 +72,6 @@
 		C442CEE42472D8C30036EAF9 /* iOS-Survey-ListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-Survey-ListTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C442CEE82472D8C30036EAF9 /* iOS_Survey_ListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_Survey_ListTests.swift; sourceTree = "<group>"; };
 		C442CEEA2472D8C30036EAF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C442CEF42472D9AD0036EAF9 /* CheckboxQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxQuestion.swift; sourceTree = "<group>"; };
 		C442CEF82472D9C80036EAF9 /* MapQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapQuestion.swift; sourceTree = "<group>"; };
 		C442CEFA2472D9DD0036EAF9 /* ExtraCommentQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtraCommentQuestion.swift; sourceTree = "<group>"; };
 		C442CEFC2472D9EA0036EAF9 /* ImageQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageQuestion.swift; sourceTree = "<group>"; };
@@ -76,13 +80,13 @@
 		C442CF042472DBAE0036EAF9 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		C442CF062472E5620036EAF9 /* QuestionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionRow.swift; sourceTree = "<group>"; };
 		C442CF082472FD0C0036EAF9 /* PickerQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerQuestion.swift; sourceTree = "<group>"; };
-		C442CF0A2472FFD70036EAF9 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		C478C12C24813A9700F8CC59 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		C4B0A77324745B860074DC73 /* MotherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotherView.swift; sourceTree = "<group>"; };
 		C4B0A77524745B900074DC73 /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 		C4B0A77724745C000074DC73 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		C4B0A77924745C240074DC73 /* EndPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPage.swift; sourceTree = "<group>"; };
-		C4B0A77E247478550074DC73 /* facemask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facemask.png; sourceTree = "<group>"; };
-		C4B0A780247483B10074DC73 /* sunflower.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sunflower.jpg; sourceTree = "<group>"; };
+		DC27FB3720B92D38A0226E4F /* Pods_iOS_Survey_List.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Survey_List.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F57844F7C75265266A39C286 /* Pods-iOS-Survey-ListTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Survey-ListTests.debug.xcconfig"; path = "Target Support Files/Pods-iOS-Survey-ListTests/Pods-iOS-Survey-ListTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A82CF482F4D45CF6338C2EA7 /* Pods_iOS_Survey_List.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,18 +102,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D741B0679ED6BA225A61D48E /* Pods_iOS_Survey_ListTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		209F2499ECF5A838239069BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				13A558CAF8FAE4256F7F9EC1 /* Pods-iOS-Survey-List.debug.xcconfig */,
+				92BE187F503173DD019117F7 /* Pods-iOS-Survey-List.release.xcconfig */,
+				F57844F7C75265266A39C286 /* Pods-iOS-Survey-ListTests.debug.xcconfig */,
+				C2DAE98DA4C6F485725AF480 /* Pods-iOS-Survey-ListTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C442CEC52472D8C20036EAF9 = {
 			isa = PBXGroup;
 			children = (
 				C442CED02472D8C20036EAF9 /* iOS-Survey-List */,
 				C442CEE72472D8C30036EAF9 /* iOS-Survey-ListTests */,
 				C442CECF2472D8C20036EAF9 /* Products */,
+				209F2499ECF5A838239069BE /* Pods */,
+				F2B8B8F197E13948C0B85624 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,11 +149,11 @@
 				C442CED32472D8C20036EAF9 /* SceneDelegate.swift */,
 				C4B0A77524745B900074DC73 /* ViewRouter.swift */,
 				C4B0A77324745B860074DC73 /* MotherView.swift */,
-				C442CED52472D8C20036EAF9 /* ContentView.swift */,
+				C442CED52472D8C20036EAF9 /* StartPage.swift */,
 				C4B0A77724745C000074DC73 /* QuestionView.swift */,
 				C442CF062472E5620036EAF9 /* QuestionRow.swift */,
 				C4B0A77924745C240074DC73 /* EndPage.swift */,
-				C442CF0A2472FFD70036EAF9 /* MapView.swift */,
+				C478C12C24813A9700F8CC59 /* MapView.swift */,
 				C442CED12472D8C20036EAF9 /* AppDelegate.swift */,
 				C442CED72472D8C30036EAF9 /* Assets.xcassets */,
 				C442CEDC2472D8C30036EAF9 /* LaunchScreen.storyboard */,
@@ -164,10 +183,10 @@
 		C442CEF32472D99B0036EAF9 /* Questions */ = {
 			isa = PBXGroup;
 			children = (
-				C442CEF42472D9AD0036EAF9 /* CheckboxQuestion.swift */,
+				C40DB8572476CFEC00E980F4 /* MultipleChoiceQuestion.swift */,
 				C442CF082472FD0C0036EAF9 /* PickerQuestion.swift */,
-				C442CEF82472D9C80036EAF9 /* MapQuestion.swift */,
 				C442CEFA2472D9DD0036EAF9 /* ExtraCommentQuestion.swift */,
+				C442CEF82472D9C80036EAF9 /* MapQuestion.swift */,
 				C442CEFC2472D9EA0036EAF9 /* ImageQuestion.swift */,
 			);
 			path = Questions;
@@ -186,10 +205,17 @@
 			isa = PBXGroup;
 			children = (
 				C442CF002472DB5A0036EAF9 /* sampleDatabase.json */,
-				C4B0A77E247478550074DC73 /* facemask.png */,
-				C4B0A780247483B10074DC73 /* sunflower.jpg */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		F2B8B8F197E13948C0B85624 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC27FB3720B92D38A0226E4F /* Pods_iOS_Survey_List.framework */,
+				64BC5FF98A75FF141B644026 /* Pods_iOS_Survey_ListTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,11 +225,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C442CEED2472D8C30036EAF9 /* Build configuration list for PBXNativeTarget "iOS-Survey-List" */;
 			buildPhases = (
+				17B5E10AC6E14B31A15A24F9 /* [CP] Check Pods Manifest.lock */,
 				C442CECA2472D8C20036EAF9 /* Sources */,
 				C442CECB2472D8C20036EAF9 /* Frameworks */,
 				C442CECC2472D8C20036EAF9 /* Resources */,
 				C497DF8824732B5F00060AE7 /* Embed Frameworks */,
 				C497DF8924732B9F00060AE7 /* Run Script */,
+				D8FF36AE6C710B6DFF0FC661 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -218,6 +246,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C442CEF02472D8C30036EAF9 /* Build configuration list for PBXNativeTarget "iOS-Survey-ListTests" */;
 			buildPhases = (
+				A5579B9569DAFC8FB0C7ED45 /* [CP] Check Pods Manifest.lock */,
 				C442CEE02472D8C30036EAF9 /* Sources */,
 				C442CEE12472D8C30036EAF9 /* Frameworks */,
 				C442CEE22472D8C30036EAF9 /* Resources */,
@@ -276,11 +305,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C442CEDE2472D8C30036EAF9 /* LaunchScreen.storyboard in Resources */,
-				C4B0A781247483B10074DC73 /* sunflower.jpg in Resources */,
 				C442CEDB2472D8C30036EAF9 /* Preview Assets.xcassets in Resources */,
 				C442CF012472DB5A0036EAF9 /* sampleDatabase.json in Resources */,
 				C442CED82472D8C30036EAF9 /* Assets.xcassets in Resources */,
-				C4B0A77F247478550074DC73 /* facemask.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +321,50 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		17B5E10AC6E14B31A15A24F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOS-Survey-List-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5579B9569DAFC8FB0C7ED45 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOS-Survey-ListTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C497DF8924732B9F00060AE7 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -312,6 +383,23 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
 		};
+		D8FF36AE6C710B6DFF0FC661 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS-Survey-List/Pods-iOS-Survey-List-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOS-Survey-List/Pods-iOS-Survey-List-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOS-Survey-List/Pods-iOS-Survey-List-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -320,19 +408,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				C442CEF92472D9C80036EAF9 /* MapQuestion.swift in Sources */,
+				C478C12D24813A9700F8CC59 /* MapView.swift in Sources */,
 				C4B0A77624745B900074DC73 /* ViewRouter.swift in Sources */,
 				C442CEFD2472D9EA0036EAF9 /* ImageQuestion.swift in Sources */,
 				C442CF072472E5620036EAF9 /* QuestionRow.swift in Sources */,
-				C442CEF52472D9AD0036EAF9 /* CheckboxQuestion.swift in Sources */,
+				C40DB8582476CFEC00E980F4 /* MultipleChoiceQuestion.swift in Sources */,
 				C4B0A77424745B860074DC73 /* MotherView.swift in Sources */,
-				C442CF0B2472FFD70036EAF9 /* MapView.swift in Sources */,
 				C442CF092472FD0C0036EAF9 /* PickerQuestion.swift in Sources */,
 				C442CED22472D8C20036EAF9 /* AppDelegate.swift in Sources */,
 				C442CF052472DBAE0036EAF9 /* Question.swift in Sources */,
 				C4B0A77824745C000074DC73 /* QuestionView.swift in Sources */,
 				C442CED42472D8C20036EAF9 /* SceneDelegate.swift in Sources */,
 				C4B0A77A24745C240074DC73 /* EndPage.swift in Sources */,
-				C442CED62472D8C20036EAF9 /* ContentView.swift in Sources */,
+				C442CED62472D8C20036EAF9 /* StartPage.swift in Sources */,
 				C442CF032472DB760036EAF9 /* Data.swift in Sources */,
 				C442CEFB2472D9DD0036EAF9 /* ExtraCommentQuestion.swift in Sources */,
 			);
@@ -484,6 +572,7 @@
 		};
 		C442CEEE2472D8C30036EAF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13A558CAF8FAE4256F7F9EC1 /* Pods-iOS-Survey-List.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -504,6 +593,7 @@
 		};
 		C442CEEF2472D8C30036EAF9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92BE187F503173DD019117F7 /* Pods-iOS-Survey-List.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -524,6 +614,7 @@
 		};
 		C442CEF12472D8C30036EAF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F57844F7C75265266A39C286 /* Pods-iOS-Survey-ListTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -545,6 +636,7 @@
 		};
 		C442CEF22472D8C30036EAF9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2DAE98DA4C6F485725AF480 /* Pods-iOS-Survey-ListTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

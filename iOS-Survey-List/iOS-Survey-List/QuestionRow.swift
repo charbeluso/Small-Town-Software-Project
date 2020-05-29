@@ -5,6 +5,8 @@
 //  Created by Charmaine Beluso on 5/18/20.
 //  Copyright © 2020 Carl Small Town Center. All rights reserved.
 //
+// This file reads the categories from the database to direct that question to its question type and style the choices accordingly.
+
 
 import SwiftUI
 
@@ -24,7 +26,7 @@ struct QuestionRow: View {
 
             // Checks the type of question according to their category given from the JSON file and passes the data to that type of question file
             if adminQuestion.category ==  "checkbox" {
-                CheckboxQuestion(adminQuestion: adminQuestion)
+                MultipleChoiceQuestion(adminQuestion: adminQuestion)
             }
             else if adminQuestion.category ==  "radio" {
                 PickerQuestion(adminQuestion: adminQuestion)

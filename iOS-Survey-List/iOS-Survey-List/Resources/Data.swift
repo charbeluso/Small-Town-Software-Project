@@ -36,6 +36,7 @@ func load<T: Decodable>(_ filename: String) -> T {
     }
 }
 
+// Allows to get a jpg image file and use it
 final class ImageStore {
     typealias _ImageDictionary = [String: CGImage]
     fileprivate var images: _ImageDictionary = [:]

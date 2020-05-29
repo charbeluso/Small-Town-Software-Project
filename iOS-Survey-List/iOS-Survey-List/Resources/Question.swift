@@ -5,6 +5,8 @@
 //  Created by Charmaine Beluso on 5/18/20.
 //  Copyright © 2020 Carl Small Town Center. All rights reserved.
 //
+// This file implements a "Question" Type to make the database readible for the rest of the program
+
 
 import SwiftUI
 
@@ -18,6 +20,7 @@ struct Question: Hashable, Codable, Identifiable {
 }
 
 /*
+ // Initializes an image variable with a Question type
 extension Question {
     var image: Image {
         ImageStore.shared.image(name: imageName)
