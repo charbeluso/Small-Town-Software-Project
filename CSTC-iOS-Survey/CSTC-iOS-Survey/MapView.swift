@@ -5,6 +5,7 @@
 //  Created by Charmaine Beluso on 5/29/20.
 //  Copyright © 2020 MSU Carl Small Town Center. All rights reserved.
 //
+// This file creates a map view from Mapbox SDK for iOS compatable with SwiftUI.
 
 
 import SwiftUI

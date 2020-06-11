@@ -2,7 +2,7 @@
 //  Data.swift
 //  CSTC-iOS-Survey
 //
-//  Created by Charmaine Beluso on 5/29/20.
+//  Created by Charmaine Beluso on 5/18/20.
 //  Copyright © 2020 MSU Carl Small Town Center. All rights reserved.
 //
 // This file converts the JSON file into an array of the Type Question. This makes the data from the JSON file usable in SwiftUI.

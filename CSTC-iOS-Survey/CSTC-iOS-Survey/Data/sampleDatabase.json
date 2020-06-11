@@ -3,151 +3,183 @@
         "question": "What sports do you play?",
         "category": "checkbox",
         "choices": ["Baseball", "Soccer", "Football", "Tennis", "Swimming", "Track/XC", "Basketball", "Other"],
+        "imageName": "",
         "id": 1
     },
     {
         "question": "What is your gender?",
         "category": "radio",
         "choices": ["Male", "Female"],
+        "imageName": "",
         "id": 2
     },
     {
         "question": "Draw current bike route: ",
         "category": "map",
         "choices": [""],
+        "imageName": "",
         "id": 3
     },
     {
-        "question": "Do you wear a facemask when going out in public?",
+        "question": "Do you wear a facemask when you go out to public places?",
         "category": "image",
         "imageName": "facemask",
         "choices": ["Yes", "No", "Sometimes"],
+        "imageName": "",
         "id": 4
     },
     {
         "question": "What businesses did you frequent most often before the pandemic? (mark on map)",
         "category": "map",
         "choices": [""],
+        "imageName": "",
         "id": 5
     },
     {
         "question": "What businesses do you frequent most often during the pandemic? (mark on map)",
         "category": "map",
         "choices": [""],
+        "imageName": "",
         "id": 6
     },
     {
         "question": "What activities did you most frequently participate in before the pandemic?",
         "category": "comment",
         "choices": [""],
+        "imageName": "",
         "id": 7
     },
     {
         "question": "What activities do you most frequently participate in during the pandemic?",
         "category": "comment",
         "choices": [""],
+        "imageName": "",
         "id": 8
     },
     {
         "question": "Have you ridden a bike during the pandemic?",
         "category": "radio",
         "choices": ["Yes", "No"],
+        "imageName": "",
         "id": 9
     },
     {
         "question": "If so, what bike routes do you frequent? (mark on map)",
         "category": "map",
         "choices": [""],
+        "imageName": "",
         "id": 10
     },
     {
         "question": "How often did you ride a bike before the pandemic?",
         "category": "radio",
         "choices": ["Everyday", "3-6 times a week", "1 or 2 times a week", "Never"],
+        "imageName": "",
         "id": 11
     },
     {
         "question": "How often do you ride a bike during the pandemic?",
         "category": "radio",
         "choices": ["Everyday", "3-6 times a week", "1 or 2 times a week", "Never"],
+        "imageName": "",
         "id": 12
     },
     {
         "question": "Have you gone on walks during the pandemic?",
         "category": "radio",
         "choices": ["Yes", "No"],
+        "imageName": "",
         "id": 13
     },
     {
         "question": "If so, what walking routes do you frequent? (mark on map)",
         "category": "map",
         "choices": [""],
+        "imageName": "",
         "id": 14
     },
     {
         "question": "How often did you take a walk before the pandemic?",
         "category": "radio",
         "choices": ["Everyday", "3-6 times a week", "1 or 2 times a week", "Never"],
+        "imageName": "",
         "id": 15
     },
     {
         "question": "How often do you take a walk during the pandemic?",
         "category": "radio",
         "choices": ["Everyday", "3-6 times a week", "1 or 2 times a week", "Never"],
+        "imageName": "",
         "id": 16
     },
     {
         "question": "When biking or walking, do you frequent any businesses?",
         "category": "radio",
         "choices": ["Yes", "No"],
+        "imageName": "",
         "id": 17
     },
     {
         "question": "If so, which ones? (mark on map)",
         "category": "map",
         "choices": [""],
+        "imageName": "",
         "id": 18
     },
     {
         "question": "What new activities are you participating in during the pandemic? (helping elderly, cooking more, working from home, cutting your own hair- ha!)",
         "category": "comment",
         "choices": [""],
+        "imageName": "",
         "id": 19
     },
     {
         "question": "How are you receiving goods and products during the pandemic? (select all that apply)",
         "category": "checkbox",
         "choices": ["Driving to the store", "Friend/family drops off the groceries at my door", "Online shopping & delivery", "Food delivery services", "Other"],
+        "imageName": "",
         "id": 20
     },
     {
         "question": "Do you shop locally during the pandemic?",
         "category": "radio",
         "choices": ["Yes", "No"],
+        "imageName": "",
         "id": 21
     },
     {
         "question": "If so, where do you shop locally? (mark on map)",
         "category": "map",
         "choices": [""],
+        "imageName": "",
         "id": 22
     },
     {
         "question": "Did you previously shop at these locations before the pandemic?",
         "category": "radio",
         "choices": ["Yes", "No"],
+        "imageName": "",
         "id": 23
     },
     {
         "question": "Where did you previously shop locally? (mark on map)",
         "category": "map",
         "choices": [""],
+        "imageName": "",
         "id": 24
     },
     {
         "question": "Any extra comments?",
         "category": "comment",
         "choices": [""],
+        "imageName": "",
         "id": 25
+    },
+    {
+        "question": "What are your thoughts on COVID-19?",
+        "category": "image",
+        "choices": [""],
+        "imageName": "covid",
+        "id": 26
     }
 ]

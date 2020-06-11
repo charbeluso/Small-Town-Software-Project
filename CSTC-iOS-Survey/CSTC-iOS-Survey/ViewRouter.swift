@@ -2,7 +2,7 @@
 //  ViewRouter.swift
 //  CSTC-iOS-Survey
 //
-//  Created by Charmaine Beluso on 5/29/20.
+//  Created by Charmaine Beluso on 5/19/20.
 //  Copyright © 2020 MSU Carl Small Town Center. All rights reserved.
 //
 // This file creates a ViewRouter class that routes the different views in the program. This allows the program to move between views/pages.

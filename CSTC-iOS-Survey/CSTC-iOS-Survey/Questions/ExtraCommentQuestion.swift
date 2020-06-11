@@ -31,7 +31,6 @@ struct ExtraCommentQuestion: View {
             // Gets the question from the JSON file labeled "question" from sampleDatabase.json
             Text(adminQuestion.question)
                 .font(.largeTitle)
-                .font(Font.headline)
                 .fontWeight(.bold)
                 .multilineTextAlignment(.center)
                 .padding(.top, 50.0)
@@ -58,7 +57,7 @@ struct ExtraCommentQuestion: View {
     }
 }
 
-// Previews the extra comment question from the fourth element in sampleDatabase
+// Previews the extra comment question from the fourth element in database
 struct ExtraCommentQuestion_Previews: PreviewProvider {
     static var previews: some View {
         ExtraCommentQuestion(adminQuestion: sampleDatabase[18])

@@ -5,6 +5,7 @@
 //  Created by Charmaine Beluso on 5/18/20.
 //  Copyright © 2020 MSU Carl Small Town Center. All rights reserved.
 //
+// This file creates each question individually depending on the type of question as told from the database.
 
 import SwiftUI
 
@@ -32,9 +33,9 @@ struct QuestionRow: View {
             else if adminQuestion.category ==  "map" {
                 MapQuestion(adminQuestion: adminQuestion)
             }
-            //else if adminQuestion.category == "image" {
-                //ImageQuestion(adminQuestion: adminQuestion)
-            //}
+            else if adminQuestion.category == "image" {
+                ImageQuestion(adminQuestion: adminQuestion)
+            }
             else {
                 ExtraCommentQuestion(adminQuestion: adminQuestion)
             }
