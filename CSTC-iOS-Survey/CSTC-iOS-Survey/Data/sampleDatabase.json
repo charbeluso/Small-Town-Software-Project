@@ -15,7 +15,7 @@
     },
     {
         "question": "Draw current bike route: ",
-        "category": "map",
+        "category": "map_polyline",
         "choices": [""],
         "imageName": "",
         "id": 3
@@ -30,14 +30,14 @@
     },
     {
         "question": "What businesses did you frequent most often before the pandemic? (mark on map)",
-        "category": "map",
+        "category": "map_pin",
         "choices": [""],
         "imageName": "",
         "id": 5
     },
     {
         "question": "What businesses do you frequent most often during the pandemic? (mark on map)",
-        "category": "map",
+        "category": "map_pin",
         "choices": [""],
         "imageName": "",
         "id": 6
@@ -65,7 +65,7 @@
     },
     {
         "question": "If so, what bike routes do you frequent? (mark on map)",
-        "category": "map",
+        "category": "map_polyline",
         "choices": [""],
         "imageName": "",
         "id": 10
@@ -93,7 +93,7 @@
     },
     {
         "question": "If so, what walking routes do you frequent? (mark on map)",
-        "category": "map",
+        "category": "map_polyline",
         "choices": [""],
         "imageName": "",
         "id": 14
@@ -121,7 +121,7 @@
     },
     {
         "question": "If so, which ones? (mark on map)",
-        "category": "map",
+        "category": "map_pin",
         "choices": [""],
         "imageName": "",
         "id": 18
@@ -149,7 +149,7 @@
     },
     {
         "question": "If so, where do you shop locally? (mark on map)",
-        "category": "map",
+        "category": "map_pin",
         "choices": [""],
         "imageName": "",
         "id": 22
@@ -163,7 +163,7 @@
     },
     {
         "question": "Where did you previously shop locally? (mark on map)",
-        "category": "map",
+        "category": "map_pin",
         "choices": [""],
         "imageName": "",
         "id": 24

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		16B509912C9190290076390A /* Pods_CSTC_iOS_SurveyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBCA7D91B54C2E1F409082F9 /* Pods_CSTC_iOS_SurveyTests.framework */; };
+		C40B15E724A41B6B00619FCC /* MapViewPolyline.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40B15E624A41B6B00619FCC /* MapViewPolyline.swift */; };
+		C40B15E924A43A7400619FCC /* MapPolylineQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40B15E824A43A7400619FCC /* MapPolylineQuestion.swift */; };
 		C449000124873B5B009D4C0B /* facemask.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C449000024873B5B009D4C0B /* facemask.jpg */; };
 		C449000324873B5F009D4C0B /* covid.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C449000224873B5F009D4C0B /* covid.jpg */; };
 		C45EECB724814FB900830DF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45EECB624814FB900830DF3 /* AppDelegate.swift */; };
@@ -51,6 +53,8 @@
 		9D5851549A34B7209CC3E4A6 /* Pods-CSTC-iOS-SurveyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSTC-iOS-SurveyTests.debug.xcconfig"; path = "Target Support Files/Pods-CSTC-iOS-SurveyTests/Pods-CSTC-iOS-SurveyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A56D1E8474A93F1F014422BC /* Pods-CSTC-iOS-SurveyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSTC-iOS-SurveyTests.release.xcconfig"; path = "Target Support Files/Pods-CSTC-iOS-SurveyTests/Pods-CSTC-iOS-SurveyTests.release.xcconfig"; sourceTree = "<group>"; };
 		BAF0E35BA034BD19DA81A46E /* Pods_CSTC_iOS_Survey.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CSTC_iOS_Survey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C40B15E624A41B6B00619FCC /* MapViewPolyline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewPolyline.swift; sourceTree = "<group>"; };
+		C40B15E824A43A7400619FCC /* MapPolylineQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPolylineQuestion.swift; sourceTree = "<group>"; };
 		C449000024873B5B009D4C0B /* facemask.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = facemask.jpg; sourceTree = "<group>"; };
 		C449000224873B5F009D4C0B /* covid.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = covid.jpg; sourceTree = "<group>"; };
 		C45EECB324814FB900830DF3 /* CSTC-iOS-Survey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CSTC-iOS-Survey.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -157,6 +161,7 @@
 				C4A0872124815C290087D79C /* EndPage.swift */,
 				C4A0872924815C540087D79C /* QuestionView.swift */,
 				C4A0872324815C360087D79C /* MapView.swift */,
+				C40B15E624A41B6B00619FCC /* MapViewPolyline.swift */,
 				C45EECBA24814FB900830DF3 /* ContentView.swift */,
 				C45EECBC24814FBB00830DF3 /* Assets.xcassets */,
 				C45EECC124814FBB00830DF3 /* LaunchScreen.storyboard */,
@@ -189,6 +194,7 @@
 				C4A0871324815AA40087D79C /* ExtraCommentQuestion.swift */,
 				C4A0871524815AAD0087D79C /* ImageQuestion.swift */,
 				C4A0871724815AB50087D79C /* MapQuestion.swift */,
+				C40B15E824A43A7400619FCC /* MapPolylineQuestion.swift */,
 				C4A0871924815AC50087D79C /* MultipleChoiceQuestion.swift */,
 				C4A0871B24815AE80087D79C /* SingleChoiceQuestion.swift */,
 			);
@@ -394,8 +400,10 @@
 				C4A0871424815AA40087D79C /* ExtraCommentQuestion.swift in Sources */,
 				C45EECB724814FB900830DF3 /* AppDelegate.swift in Sources */,
 				C4A0872024815BDD0087D79C /* Question.swift in Sources */,
+				C40B15E924A43A7400619FCC /* MapPolylineQuestion.swift in Sources */,
 				C4A0872224815C2A0087D79C /* EndPage.swift in Sources */,
 				C45EECB924814FB900830DF3 /* SceneDelegate.swift in Sources */,
+				C40B15E724A41B6B00619FCC /* MapViewPolyline.swift in Sources */,
 				C4A0872A24815C550087D79C /* QuestionView.swift in Sources */,
 				C45EECBB24814FB900830DF3 /* ContentView.swift in Sources */,
 				C4A0872E24815C690087D79C /* ViewRouter.swift in Sources */,

@@ -34,19 +34,28 @@ struct MapQuestion: View {
                 .multilineTextAlignment(.center)
                 .padding(.top, 40.0)
             
+            
             // Calls the MapView function that shows the map from MapView.swift
             // Starkville
             MapView(annotations: $annotations).centerCoordinate(.init(latitude: 33.45049, longitude: -88.81961)).styleURL(MGLStyle.outdoorsStyleURL).zoomLevel(14).frame(width: 600, height: 850) // formats the map to only show within this frame on the screen
-            
+
             Spacer()
             
         }.padding()
+         
     }
 }
+
 
 // Previews the checkbox question from the third element in sampleDatabase
 struct MapQuestion_Previews: PreviewProvider {
     static var previews: some View {
-        MapQuestion(adminQuestion: sampleDatabase[2])
+        List {
+            VStack(alignment: .center) {
+                MapQuestion(adminQuestion: sampleDatabase[2])
+                MapQuestion(adminQuestion: sampleDatabase[4])
+                MapQuestion(adminQuestion: sampleDatabase[4])
+            }
+        }
     }
 }

@@ -8,6 +8,7 @@
 // This file creates each question individually depending on the type of question as told from the database.
 
 import SwiftUI
+import Mapbox
 
 // Structure that creates a question by determining its question type from sampleDatabase.json & Question.swift
 struct QuestionRow: View {
@@ -30,7 +31,10 @@ struct QuestionRow: View {
             else if adminQuestion.category ==  "radio" {
                 PickerQuestion(adminQuestion: adminQuestion)
             }
-            else if adminQuestion.category ==  "map" {
+            else if adminQuestion.category ==  "map_pin" {
+                MapQuestion(adminQuestion: adminQuestion)
+            }
+            else if adminQuestion.category ==  "map_polyline" {
                 MapQuestion(adminQuestion: adminQuestion)
             }
             else if adminQuestion.category == "image" {

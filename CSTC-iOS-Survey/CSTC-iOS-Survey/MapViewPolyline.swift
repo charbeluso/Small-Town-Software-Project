@@ -1,37 +1,26 @@
 //
-//  MapView.swift
+//  MapViewPolyline.swift
 //  CSTC-iOS-Survey
 //
-//  Created by Charmaine Beluso on 5/29/20.
+//  Created by Charmaine Beluso on 6/24/20.
 //  Copyright © 2020 MSU Carl Small Town Center. All rights reserved.
 //
-// This file creates a map view from Mapbox SDK for iOS compatable with SwiftUI.
-
 
 import SwiftUI
 import Mapbox
 
-// Creates an annotation using title & coordinate
-extension MGLPointAnnotation {
-    convenience init(title: String, coordinate: CLLocationCoordinate2D) {
-        self.init()
-        self.title = title
-        self.coordinate = coordinate
-    }
-}
-
 
 // Represents & Displays an MGLMapView in SwiftUI
-struct MapView: UIViewRepresentable {
+struct MapViewPolyline: UIViewRepresentable {
 
     // Property binding to add annotations
-    @Binding var annotations: [MGLPointAnnotation]
+    @Binding var polylines: [MGLPolyline]
     
     // Creates a mapView with MGLMapView type
     private let mapView: MGLMapView = MGLMapView(frame: .zero, styleURL: MGLStyle.streetsStyleURL)
 
     // Needed function for UIViewRepresentable
-    func makeUIView(context: UIViewRepresentableContext<MapView>) -> MGLMapView {
+    func makeUIView(context: UIViewRepresentableContext<MapViewPolyline>) -> MGLMapView {
         mapView.delegate = context.coordinator
         
         // Add a single tap gesture recognizer. This gesture requires the built-in MGLMapView tap gestures (such as those for zoom and annotation selection) to fail.
@@ -49,24 +38,24 @@ struct MapView: UIViewRepresentable {
     }
     
     // Needed function for UIViewRepresentable
-    func updateUIView(_ uiView: MGLMapView, context: UIViewRepresentableContext<MapView>) {
+    func updateUIView(_ uiView: MGLMapView, context: UIViewRepresentableContext<MapViewPolyline>) {
             updateAnnotations(uiView)
     }
     
     // Styles the map with a MapBox Studio URL
-    func styleURL(_ styleURL: URL) -> MapView {
+    func styleURL(_ styleURL: URL) -> MapViewPolyline {
             mapView.styleURL = styleURL
             return self
     }
         
     // Specifies where the map is centered
-    func centerCoordinate(_ centerCoordinate: CLLocationCoordinate2D) -> MapView {
+    func centerCoordinate(_ centerCoordinate: CLLocationCoordinate2D) -> MapViewPolyline {
             mapView.centerCoordinate = centerCoordinate
             return self
     }
     
     // Specifies the zoom level of the initial view
-    func zoomLevel(_ zoomLevel: Double) -> MapView {
+    func zoomLevel(_ zoomLevel: Double) -> MapViewPolyline {
             mapView.zoomLevel = zoomLevel
             return self
     }
@@ -76,58 +65,38 @@ struct MapView: UIViewRepresentable {
         //if let currentAnnotations = uiView.annotations {
             //uiView.removeAnnotations(currentAnnotations)
         //}
-        uiView.addAnnotations(annotations)
+        uiView.addAnnotations(polylines)
     }
     
     // Makes the coordinater (coordinator class below)
-    func makeCoordinator() -> MapView.Coordinator {
+    func makeCoordinator() -> MapViewPolyline.Coordinator {
         Coordinator(self, mapView)
     }
     
     // A coordinator used with a delegate to add the annotation view to the map
     // A coordinator class is declared to implement and view MGLMapViewDelegate in SwiftUI
     final class Coordinator: NSObject, MGLMapViewDelegate {
-        var control: MapView
+        var control: MapViewPolyline
         var mapView: MGLMapView!
         var coordinates = [CLLocationCoordinate2D]() // Create an array of coordinates for our polyline
         var pointAnnotations = [MGLPointAnnotation]()
+        var polylineAnnotations = [MGLPolyline]()
 
-        init(_ control: MapView, _ mapView: MGLMapView) {
+        init(_ control: MapViewPolyline, _ mapView: MGLMapView) {
             self.control = control
             self.mapView = mapView
         }
         
         func mapView(_ mapView: MGLMapView, annotationCanShowCallout annotation: MGLAnnotation) -> Bool {
-            self.mapView.removeAnnotation(annotation)
+            //self.mapView.removeAnnotation(annotation)
 
-            return false
+            return true
         }
         
         
-        /*
         func mapView(_ mapView: MGLMapView, viewFor annotation: MGLAnnotation) -> MGLAnnotationView? {
             return nil
         }
-         */
- 
-        
-        // This delegate method is where you tell the map to load a view for a specific annotation. To load a static MGLAnnotationImage, you would use `-mapView:imageForAnnotation:`.
-        func mapView(_ mapView: MGLMapView, viewFor annotation: MGLAnnotation) -> MGLAnnotationView? {
-            // This example is only concerned with point annotations.
-            guard annotation is MGLPointAnnotation else {
-                return nil
-            }
-             
-            // Use the point annotation’s longitude value (as a string) as the reuse identifier for its view.
-            let reuseIdentifier = "\(annotation.coordinate.longitude)"
-             
-            // For better performance, always try to reuse existing annotations.
-            let annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseIdentifier)
-             
-            return annotationView
-        }
-         
-        
 
         @objc func handleMapTap(sender: UITapGestureRecognizer) {
             // Convert tap location (CGPoint) to geographic coordinate (CLLocationCoordinate2D).
@@ -137,27 +106,37 @@ struct MapView: UIViewRepresentable {
             
             coordinates.append(tapCoordinate)
             print("Coordinates list: \(coordinates)")
+
+            //mapView.removeAnnotations(self.polylines)
+            
+            // Add a polyline with the coordinates
+            //let polyline = MGLPolyline(coordinates: &coordinates, count: UInt(coordinates.count))
+           // polylineAnnotations.append(polyline)
+            //mapView.removeAnnotations(existingAnnotations)
+            //coordinates.removeAll()
+            //mapView.addAnnotations(polylineAnnotations)
             
             
-            //var pointAnnotations = [MGLPointAnnotation]()
+            
             for coordinate in coordinates {
-                let point = MGLPointAnnotation()
-                point.coordinate = coordinate
-                point.title = "\(coordinate.latitude), \(coordinate.longitude)"
-                pointAnnotations.append(point)
-                //mapView.addAnnotations(pointAnnotations)
-                //mapView.addAnnotation(point)
-                print("Annotations: \(pointAnnotations)")
-                
                 // Add a polyline with the coordinates
-                //let polyline = MGLPolyline(coordinates: &coordinates, count: UInt(coordinates.count))
+                let polyline = MGLPolyline(coordinates: &coordinates, count: UInt(coordinates.count))
+                polylineAnnotations.append(polyline)
+                print("Annotations: \(polylineAnnotations)")
                 //mapView.addAnnotation(polyline)
-            
             }
-            coordinates.removeAll()
-            mapView.addAnnotations(pointAnnotations) //comment this out to only show polylines
-            pointAnnotations.removeAll()
+            //coordinates.removeAll()
+            mapView.addAnnotations(polylineAnnotations)
+            //coordinates.removeAll()
+            
+
+             
+            // Remove any existing polyline(s) from the map.
+            //if mapView.annotations?.count != nil, let existingAnnotations = mapView.annotations {
+                //mapView.removeAnnotations(existingAnnotations)
+            //}
         }
     
     }
 }
+
