@@ -3,7 +3,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Show drawn polygon area</title>
+    <title>Carl Small Town Center Survey</title>
     <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
     <script src="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css" rel="stylesheet" />
@@ -14,7 +14,29 @@
   </head>
   <body>
 
+    <script src="https://api.tiles.mapbox.com/mapbox.js/plugins/turf/v3.0.11/turf.min.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.0.9/mapbox-gl-draw.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.0.9/mapbox-gl-draw.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.css"
+      type="text/css"
+    />
+
+    <!-- Promise polyfill script required to use Mapbox GL Geocoder in IE 11 -->
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
     <style>
+      #geocoder-container > div {
+        min-width: 50%;
+        margin-left: 25%;
+      }
+
       .calculation-box {
         height: 75px;
         width: 150px;
@@ -31,20 +53,26 @@
         margin: 0;
         font-size: 13px;
       }
+
+      .popup {
+        height: 65px;
+        width: 130px;
+        position: absolute;
+        bottom: 40px;
+        left: 10px;
+        padding: 15px;
+        text-align: center;
+      }
     </style>
 
-    <script src="https://api.tiles.mapbox.com/mapbox.js/plugins/turf/v3.0.11/turf.min.js"></script>
-    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.0.9/mapbox-gl-draw.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.0.9/mapbox-gl-draw.css"
-      type="text/css"
-    />
     <div id="map"></div>
+
+<!--
     <div class="calculation-box">
       <p>Draw a polygon using the draw tools.</p>
       <div id="calculated-area"></div>
     </div>
+  -->
 
     <script>
     	mapboxgl.accessToken = 'pk.eyJ1IjoiY3N0Yy1tYXBzIiwiYSI6ImNrYXNjZ3NnNDFnbzgyd3AxamIzNWFvMTUifQ.0IW10LpGpCxwH61fWwb54Q';
@@ -52,22 +80,56 @@
         container: 'map', // container id
         style: 'mapbox://styles/mapbox/streets-v11', //hosted style id
         center: [-88.81961, 33.45049], // starting position
-        zoom: 12 // starting zoom
+        zoom: 14 // starting zoom
       });
 
+      var geocoder = new MapboxGeocoder({
+      accessToken: mapboxgl.accessToken,
+      marker: {
+      color: 'orange'
+      },
+      mapboxgl: mapboxgl
+      });
+
+      map.addControl(geocoder);
+
+      var msu_popup = new mapboxgl.Popup({ closeOnClick: false, className: "popup" })
+        .setHTML('<h3>Mississippi State University</h3>')
+        .addTo(map);
+
+      var msu_marker = new mapboxgl.Marker()
+        .setLngLat([-88.7944, 33.4552])
+        .setPopup(msu_popup)
+        .addTo(map)
+        .togglePopup();
+
+      var highschool_popup = new mapboxgl.Popup({ closeOnClick: false, className: "popup" })
+        .setHTML('<h3>Starkville High School</h3>')
+        .addTo(map);
+
+      var highschool_marker = new mapboxgl.Marker()
+        .setLngLat([-88.8214, 33.4515])
+        .setPopup(highschool_popup)
+        .addTo(map)
+        .togglePopup();
+
       var draw = new MapboxDraw({
-        displayControlsDefault: true,
+        displayControlsDefault: false,
         controls: {
+          line_string: true,
+          point: true,
           polygon: true,
           trash: true
         }
       });
       map.addControl(draw);
+      map.addControl(new mapboxgl.NavigationControl());
 
       map.on('draw.create', updateArea);
       map.on('draw.delete', updateArea);
       map.on('draw.update', updateArea);
 
+/*
       function updateArea(e) {
         var data = draw.getAll();
         var answer = document.getElementById('calculated-area');
@@ -85,7 +147,8 @@
             alert('Use the draw tools to draw a polygon!');
         }
       }
-    </script>
+*/
 
+    </script>
   </body>
 </html>
