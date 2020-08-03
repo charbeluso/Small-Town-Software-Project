@@ -9,7 +9,6 @@ This software application is survey-based to collect data from the general commu
 | Charmaine Beluso    | `charbeluso`             | 
 | Cait Kleinschmidt   | `caitthecaptain`         | 
 | Elisabeth Ama       | `amaelisabeth`           | 
-| Tara Broome         | `tara-nicole`            | 
 
 ### Documentation
 More information about our project can be found on our project [wiki page](https://github.com/charbeluso/Small-Town-Software-Project/wiki).
