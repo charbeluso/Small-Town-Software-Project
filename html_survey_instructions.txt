@@ -1,0 +1,10 @@
+To use the HTML survey option instead of the Microsoft Forms option:
+
+You must log into the gmail account: 
+email: fcjsmalltowncenter@gmail.com
+password: sm@11+own
+
+An email will be sent to this address whenever someone responds to the survey, and it will be added to the spreadsheet.
+
+To see the survey response spreadsheet:
+Log into gmail account, select the square of dots at the top, and select "Sheets"
