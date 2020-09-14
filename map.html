@@ -37,17 +37,6 @@
         margin-left: 25%;
       }
 
-      .calculation-box {
-        height: 75px;
-        width: 150px;
-        position: absolute;
-        bottom: 40px;
-        left: 10px;
-        background-color: rgba(255, 255, 255, 0.9);
-        padding: 15px;
-        text-align: center;
-      }
-
       p {
         font-family: 'Open Sans';
         margin: 0;
@@ -63,16 +52,25 @@
         padding: 15px;
         text-align: center;
       }
+
+      .mapboxgl-marker {
+        height: 20px;
+        width: 20px;
+        z-index: 5;
+        border: 1px solid black;
+        border-radius: 50%;
+        background-color: maroon;
+    }
+
+    .mapboxgl-draw_point {
+      color: maroon;
+    }
+
+
     </style>
 
     <div id="map"></div>
 
-<!--
-    <div class="calculation-box">
-      <p>Draw a polygon using the draw tools.</p>
-      <div id="calculated-area"></div>
-    </div>
-  -->
 
     <script>
     	mapboxgl.accessToken = 'pk.eyJ1IjoiY3N0Yy1tYXBzIiwiYSI6ImNrYXNjZ3NnNDFnbzgyd3AxamIzNWFvMTUifQ.0IW10LpGpCxwH61fWwb54Q';
@@ -86,18 +84,30 @@
       var geocoder = new MapboxGeocoder({
       accessToken: mapboxgl.accessToken,
       marker: {
-      color: 'orange'
+        color: 'maroon'
       },
       mapboxgl: mapboxgl
       });
 
       map.addControl(geocoder);
 
+      // create DOM element for the marker
+      var el = document.createElement('div');
+      el.id = 'marker';
+
+      // create DOM element for the marker
+      var el2 = document.createElement('div');
+      el.id = 'marker';
+
+      // create DOM element for the marker
+      var el3 = document.createElement('div');
+      el.id = 'marker';
+
       var msu_popup = new mapboxgl.Popup({ closeOnClick: false, className: "popup" })
         .setHTML('<h3>Mississippi State University</h3>')
         .addTo(map);
 
-      var msu_marker = new mapboxgl.Marker()
+      var msu_marker = new mapboxgl.Marker(el)
         .setLngLat([-88.7944, 33.4552])
         .setPopup(msu_popup)
         .addTo(map)
@@ -107,7 +117,7 @@
         .setHTML('<h3>Starkville High School</h3>')
         .addTo(map);
 
-      var highschool_marker = new mapboxgl.Marker()
+      var highschool_marker = new mapboxgl.Marker(el2)
         .setLngLat([-88.8214, 33.4515])
         .setPopup(highschool_popup)
         .addTo(map)
@@ -129,25 +139,6 @@
       map.on('draw.delete', updateArea);
       map.on('draw.update', updateArea);
 
-/*
-      function updateArea(e) {
-        var data = draw.getAll();
-        var answer = document.getElementById('calculated-area');
-        if (data.features.length > 0) {
-          var area = turf.area(data);
-          // restrict to area to 2 decimal points
-          var rounded_area = Math.round(area * 100) / 100;
-          answer.innerHTML =
-            '<p><strong>' +
-            rounded_area +
-            '</strong></p><p>square meters</p>';
-        } else {
-          answer.innerHTML = '';
-          if (e.type !== 'draw.delete')
-            alert('Use the draw tools to draw a polygon!');
-        }
-      }
-*/
 
     </script>
   </body>
